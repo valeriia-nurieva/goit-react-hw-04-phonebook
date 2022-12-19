@@ -18,7 +18,7 @@ const App = () => {
       name,
       number,
     };
-    setContacts([newContact, ...contacts]);
+    setContacts(prevContacts => [newContact, ...prevContacts ])
   };
 
   const deleteContact = contactId => {
